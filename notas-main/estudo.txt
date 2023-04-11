@@ -1,0 +1,8 @@
+    let linha2 = "<tr>"
+    linha2 += `<td>Media final</td>`
+    linha2 += `<td>${inputNotaAtividade.value}</td>`
+    linha2 += `<td> <span class=${inputNotaAtividade.value >= 7 ? ".aprovado" : ".reprovado"}>${inputNotaAtividade.value >= 7 ? "Aprovado" : "Reprovado"}</span> </td>`
+    linha2 += "</tr>"
+
+    const corpoTabela1 = document.querySelector("tfoot")
+    corpoTabela1.innerHTML = linha
